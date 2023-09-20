@@ -1,10 +1,20 @@
 services:
   mysql:
-    image: 'mysql:latest'
+    image: 'mysql:8.0.34'
+    restart: always
     environment:
       - 'MYSQL_DATABASE=db'
       - 'MYSQL_PASSWORD=DRcogjV7y@rcvez@CS#yk2F2PR9eC4kUnAjkgBgD53H59!SUQ$'
       - 'MYSQL_ROOT_PASSWORD=DRcogjV7y@rcvez@CS#yk2F2PR9eC4kUnAjkgBgD53H59!SUQ$'
       - 'MYSQL_USER=vzahnitko'
     ports:
-      - '3306'
+      - '3306:3306'
+    networks:
+      - springapimysql-net
+    volumes:
+      - db:/var/lib/mysql
+
+networks:
+  springapimysql-net:
+volumes:
+  db:
