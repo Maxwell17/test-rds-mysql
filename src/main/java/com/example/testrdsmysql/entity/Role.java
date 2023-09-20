@@ -1,12 +1,12 @@
 package com.example.testrdsmysql.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
-@Table(schema = "db", name = "roles")
 @Entity(name = "roles")
 public class Role {
 
@@ -19,7 +19,8 @@ public class Role {
     @Enumerated(EnumType.STRING)
     private RoleName name;
 
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 }

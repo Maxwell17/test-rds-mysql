@@ -1,4 +1,4 @@
-package com.example.testrdsmysql;
+package com.example.testrdsmysql.service;
 
 import com.example.testrdsmysql.data.UserRepository;
 import com.example.testrdsmysql.entity.User;
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> findUsers() {
-        return (List<User>) this.repository.findAll();
+        return this.repository.findUsers();
     }
 
     @Override

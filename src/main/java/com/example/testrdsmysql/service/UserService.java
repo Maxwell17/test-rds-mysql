@@ -1,4 +1,4 @@
-package com.example.testrdsmysql;
+package com.example.testrdsmysql.service;
 
 import com.example.testrdsmysql.entity.User;
 import lombok.NonNull;

@@ -1,8 +1,8 @@
 package com.example.testrdsmysql.controller;
 
-import com.example.testrdsmysql.UserService;
 import com.example.testrdsmysql.dto.UserDTO;
 import com.example.testrdsmysql.dto.UserMapper;
+import com.example.testrdsmysql.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
