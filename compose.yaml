@@ -5,6 +5,11 @@ services:
 #     - mysql
 #    restart: always
 #    environment:
+#      - 'RDS_HOSTNAME=rds-mysql-db.cwqxnjcd57jp.us-east-1.rds.amazonaws.com'
+#      - 'RDS_PORT=3306'
+#      - 'RDS_DB_NAME=rds-mysql-db'
+#      - 'RDS_USERNAME=admin'
+#      - 'RDS_PASSWORD=CfJwJvf58B09a8K'
 #      - 'SPRING_PROFILES_ACTIVE=docker'
 #    ports:
 #      - '8080:8080'
