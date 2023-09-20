@@ -1,5 +1,6 @@
 package com.example.testrdsmysql.controller;
 
+import com.example.testrdsmysql.controller.advice.UserNotFoundException;
 import com.example.testrdsmysql.dto.UserDTO;
 import com.example.testrdsmysql.dto.UserMapper;
 import com.example.testrdsmysql.service.UserService;
@@ -36,7 +37,7 @@ public class UserController {
         return ResponseEntity.ok(userService
                 .findUserByUsername(username)
                 .map(mapper::toDTO)
-                .orElseThrow()
+                .orElseThrow(() -> new UserNotFoundException(username))
         );
     }
 
