@@ -23,6 +23,6 @@ public interface UserMapper {
             @Mapping(target="lastName", source="lastName"),
             @Mapping(target="position", source="position")
     })
-    User fromDTO(UserDTO destination);
+    User fromDTO(UserDTO target);
 
 }

@@ -6,8 +6,8 @@ import lombok.Data;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
-@Table(name = "ROLES")
-@Entity(name = "ROLES")
+@Table(schema = "db", name = "roles")
+@Entity(name = "roles")
 public class Role {
 
     @Id

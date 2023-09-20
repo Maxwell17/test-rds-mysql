@@ -9,8 +9,11 @@ import java.util.Set;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
-@Table(name = "USERS")
-@Entity(name = "USERS")
+@Table(schema = "db", name = "users")
+@Entity( name = "users")
+@NamedEntityGraph(name = "User.roles",
+        attributeNodes = @NamedAttributeNode("roles")
+)
 public class User {
 
     @Id
@@ -30,6 +33,6 @@ public class User {
     @Column(name = "position", length = 50, nullable = false)
     private String position;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 }
