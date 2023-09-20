@@ -1,4 +1,16 @@
 services:
+#  api:
+#    image: 'my-rds-app:0.0.1-SNAPSHOT'
+#    depends_on:
+#     - mysql
+#    restart: always
+#    environment:
+#      - 'SPRING_PROFILES_ACTIVE=docker'
+#    ports:
+#      - '8080:8080'
+#    networks:
+#      - springapimysql-net
+
   mysql:
     image: 'mysql:8.0.34'
     restart: always
