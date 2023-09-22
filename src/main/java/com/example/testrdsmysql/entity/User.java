@@ -2,17 +2,16 @@ package com.example.testrdsmysql.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
 @Builder
+@EqualsAndHashCode(exclude = "roles")
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity( name = "users")
@@ -38,6 +37,7 @@ public class User {
     @Column(name = "position", length = 50, nullable = false)
     private String position;
 
+    @Builder.Default
     @JsonManagedReference
     @ManyToMany
     @JoinTable(
@@ -45,5 +45,5 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-    private Set<Role> roles;
+    private Set<Role> roles = new HashSet<>();
 }

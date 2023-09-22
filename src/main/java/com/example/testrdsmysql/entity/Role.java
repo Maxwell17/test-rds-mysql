@@ -2,17 +2,16 @@ package com.example.testrdsmysql.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
 @Builder
+@EqualsAndHashCode(exclude = "users")
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "roles")
@@ -27,7 +26,8 @@ public class Role {
     @Enumerated(EnumType.STRING)
     private RoleName name;
 
+    @Builder.Default
     @JsonBackReference
     @ManyToMany(mappedBy = "roles")
-    private Set<User> users;
+    private Set<User> users = new HashSet<>();
 }
