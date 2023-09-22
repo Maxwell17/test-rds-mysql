@@ -13,11 +13,11 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 
-    @EntityGraph(value = "User.roles", type = EntityGraph.EntityGraphType.FETCH)
+    @EntityGraph(value = "User.roles")
     Optional<User> findUserByUsername(@NonNull String username);
 
-    @Query(value = "SELECT u FROM users u")
-    @EntityGraph(value = "User.roles", type = EntityGraph.EntityGraphType.FETCH)
+    @Query(value = "SELECT DISTINCT u FROM users u")
+    @EntityGraph(value = "User.roles")
     List<User> findUsers();
 
 }

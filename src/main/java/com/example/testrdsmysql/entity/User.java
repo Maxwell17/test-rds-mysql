@@ -2,14 +2,19 @@ package com.example.testrdsmysql.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity( name = "users")
 @NamedEntityGraph(name = "User.roles",
         attributeNodes = @NamedAttributeNode("roles")
@@ -34,6 +39,11 @@ public class User {
     private String position;
 
     @JsonManagedReference
-    @OneToMany(mappedBy = "user")
-    private List<Role> roles = new ArrayList<>();
+    @ManyToMany
+    @JoinTable(
+            name = "user_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Set<Role> roles;
 }

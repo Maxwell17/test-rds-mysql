@@ -10,12 +10,14 @@ import org.mapstruct.Mappings;
 public interface RoleMapper {
 
     @Mappings({
-            @Mapping(target="name", source="name")
+            @Mapping(target = "roleId", source = "id"),
+            @Mapping(target = "name", source = "name")
     })
     RoleDTO toDTO(Role source);
 
     @Mappings({
-            @Mapping(target="name", source="name")
+            @Mapping(target = "id", source = "roleId"),
+            @Mapping(target = "name", source = "name")
     })
     Role fromDTO(RoleDTO target);
 

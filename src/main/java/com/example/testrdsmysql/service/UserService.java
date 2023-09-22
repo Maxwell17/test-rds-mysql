@@ -12,4 +12,8 @@ public interface UserService {
 
     Optional<User> findUserByUsername(@NonNull String username);
 
+    User create(User user);
+
+    User update(User user);
+
 }

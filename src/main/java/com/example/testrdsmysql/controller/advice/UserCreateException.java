@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Getter
 @StandardException
-@ResponseStatus(HttpStatus.NOT_FOUND)
-public class UserNotFoundException extends RuntimeException {
+@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+public class UserCreateException extends RuntimeException {
 
     private String username;
 
-    public UserNotFoundException(String username) {
+    public UserCreateException(String username) {
         this.username = username;
     }
+
 }
