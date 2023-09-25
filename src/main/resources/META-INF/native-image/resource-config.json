@@ -1,0 +1,198 @@
+{
+  "resources":{
+  "includes":[{
+    "pattern":"\\QMETA-INF/jpa-named-queries.properties\\E"
+  }, {
+    "pattern":"\\QMETA-INF/log4j-provider.properties\\E"
+  }, {
+    "pattern":"\\QMETA-INF/orm.xml\\E"
+  }, {
+    "pattern":"\\QMETA-INF/persistence.xml\\E"
+  }, {
+    "pattern":"\\QMETA-INF/resources/index.html\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/ch.qos.logback.classic.spi.Configurator\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.lang.System$LoggerFinder\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.net.spi.InetAddressResolverProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.net.spi.URLStreamHandlerProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.nio.channels.spi.SelectorProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.sql.Driver\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.time.zone.ZoneRulesProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.util.spi.ResourceBundleControlProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.xml.stream.XMLEventFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.xml.stream.XMLInputFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.xml.transform.TransformerFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.apache.logging.log4j.spi.Provider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.apache.logging.log4j.util.PropertySource\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.flywaydb.core.extensibility.Plugin\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.model.FunctionContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.model.TypeContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.registry.selector.StrategyRegistrationProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.registry.selector.spi.DialectSelector\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.AdditionalJaxbMappingProducer\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.AdditionalMappingContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.MetadataBuilderContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.MetadataBuilderFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.MetadataBuilderInitializer\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.MetadataContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.MetadataSourcesContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.boot.spi.SessionFactoryBuilderFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.engine.jdbc.dialect.spi.DialectResolver\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.event.spi.EventEngineContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.id.factory.spi.GenerationTypeStrategyRegistration\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.integrator.spi.Integrator\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.query.criteria.spi.CriteriaBuilderExtension\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.service.spi.ServiceContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.hibernate.service.spi.SessionFactoryServiceContributor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.slf4j.spi.SLF4JServiceProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring.factories\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring.integration.properties\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring/logback-pattern-rules\\E"
+  }, {
+    "pattern":"\\Q\\E"
+  }, {
+    "pattern":"\\Qapplication-default.properties\\E"
+  }, {
+    "pattern":"\\Qapplication-default.xml\\E"
+  }, {
+    "pattern":"\\Qapplication-default.yaml\\E"
+  }, {
+    "pattern":"\\Qapplication-default.yml\\E"
+  }, {
+    "pattern":"\\Qapplication.properties\\E"
+  }, {
+    "pattern":"\\Qapplication.xml\\E"
+  }, {
+    "pattern":"\\Qapplication.yaml\\E"
+  }, {
+    "pattern":"\\Qapplication.yml\\E"
+  }, {
+    "pattern":"\\Qbanner.txt\\E"
+  }, {
+    "pattern":"\\Qcom/example/testrdsmysql/entity/Role.class\\E"
+  }, {
+    "pattern":"\\Qcom/example/testrdsmysql/entity/User.class\\E"
+  }, {
+    "pattern":"\\Qcom/mysql/cj/TlsSettings.properties\\E"
+  }, {
+    "pattern":"\\Qconfig/application-default.properties\\E"
+  }, {
+    "pattern":"\\Qconfig/application-default.xml\\E"
+  }, {
+    "pattern":"\\Qconfig/application-default.yaml\\E"
+  }, {
+    "pattern":"\\Qconfig/application-default.yml\\E"
+  }, {
+    "pattern":"\\Qconfig/application.properties\\E"
+  }, {
+    "pattern":"\\Qconfig/application.xml\\E"
+  }, {
+    "pattern":"\\Qconfig/application.yaml\\E"
+  }, {
+    "pattern":"\\Qconfig/application.yml\\E"
+  }, {
+    "pattern":"\\Qdata-all.sql\\E"
+  }, {
+    "pattern":"\\Qdata.sql\\E"
+  }, {
+    "pattern":"\\Qdb/callback\\E"
+  }, {
+    "pattern":"\\Qdb/migration/V1_0__create_user_schema.sql\\E"
+  }, {
+    "pattern":"\\Qdb/migration/V2_0__data_user_schema.sql\\E"
+  }, {
+    "pattern":"\\Qdb/migration\\E"
+  }, {
+    "pattern":"\\Qhibernate.properties\\E"
+  }, {
+    "pattern":"\\Qlog4j2.StatusLogger.properties\\E"
+  }, {
+    "pattern":"\\Qlog4j2.component.properties\\E"
+  }, {
+    "pattern":"\\Qlog4j2.system.properties\\E"
+  }, {
+    "pattern":"\\Qlogback-spring.groovy\\E"
+  }, {
+    "pattern":"\\Qlogback-spring.xml\\E"
+  }, {
+    "pattern":"\\Qlogback-test-spring.groovy\\E"
+  }, {
+    "pattern":"\\Qlogback-test-spring.xml\\E"
+  }, {
+    "pattern":"\\Qlogback-test.groovy\\E"
+  }, {
+    "pattern":"\\Qlogback-test.scmo\\E"
+  }, {
+    "pattern":"\\Qlogback-test.xml\\E"
+  }, {
+    "pattern":"\\Qlogback.groovy\\E"
+  }, {
+    "pattern":"\\Qlogback.scmo\\E"
+  }, {
+    "pattern":"\\Qlogback.xml\\E"
+  }, {
+    "pattern":"\\Qorg/flywaydb/core/internal/version.txt\\E"
+  }, {
+    "pattern":"\\Qorg/hibernate/hibernate-configuration-3.0.dtd\\E"
+  }, {
+    "pattern":"\\Qorg/hibernate/hibernate-mapping-3.0.dtd\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/boot/autoconfigure/transaction/TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/http/codec/CodecConfigurer.properties\\E"
+  }, {
+    "pattern":"\\Qpublic/index.html\\E"
+  }, {
+    "pattern":"\\Qresources/index.html\\E"
+  }, {
+    "pattern":"\\Qschema-all.sql\\E"
+  }, {
+    "pattern":"\\Qschema.sql\\E"
+  }, {
+    "pattern":"\\Qspring.properties\\E"
+  }, {
+    "pattern":"\\Qstatic/index.html\\E"
+  }, {
+    "pattern":"java.base:\\Qjdk/internal/icu/impl/data/icudt72b/nfc.nrm\\E"
+  }]},
+  "bundles":[{
+    "name":"com.mysql.cj.LocalizedErrorMessages",
+    "locales":[""]
+  }]
+}
